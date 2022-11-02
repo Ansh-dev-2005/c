@@ -1,0 +1,1 @@
+////amstrong of a number
