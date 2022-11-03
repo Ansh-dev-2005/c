@@ -4,6 +4,7 @@ void Armstrong(int n)
 int temp=n; 
 int d=0; 
 int sum=0; 
+
 while(temp!=0) {  
     d=temp%10; 
     sum=sum+d*d*d; 
@@ -19,5 +20,8 @@ int main()
     int n;
     printf("Enter the number");
     scanf("%d",&n);
-    return ;
+    Armstrong(n);
+
+
+    return 0;
 }
