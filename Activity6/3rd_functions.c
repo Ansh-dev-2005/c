@@ -5,7 +5,8 @@ int main(){
     int arr[MAX_SIZE];
     int N, i, sumofarray;
     printf("Enter size of the array: ");
-    scanf("%d", &N);printf("Enter elements in the array: ");
+    scanf("%d", &N);
+    printf("Enter elements in the array: ");
     for(i=0; i<N; i++){
         scanf("%d", &arr[i]);
         }
