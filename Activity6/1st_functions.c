@@ -16,18 +16,40 @@ while(temp!=0) {
     printf("The Number is not an Armstrong Number\n"); 
 }
 void coprime(int n){
-    int a=n, reverse = 0, remainder;
-
+    int a=n, reverse = 0, remainder, i, hcf;
+ 
   while (a != 0) {
     remainder = a % 10;
     reverse = reverse * 10 + remainder;
     a /= 10;
+
   }
-    if(n==reverse){
-        printf("Enter number's reverse is equal to the number\n");
-    }else{
-        printf("Not equal to its reverse\n");
-    }
+   if(reverse>n){
+     for(i=1;i<=reverse;i++)
+	 {
+	  if(reverse==0 && reverse%i==0)
+	  {
+	   hcf = i;
+	  }
+	 }
+}else{
+    for(i=1;i<=n;i++)
+	 {
+	  if(reverse%i==0 && n%i==0)
+	  {
+	   hcf = i;
+	  }
+	 }
+}
+if(hcf == 1)
+	 {
+	  printf("%d and %d are CO-PRIME NUMBERS. \n", reverse, n);
+	 }
+	 else
+	 {
+	  printf("%d and %d are NOT CO-PRIME NUMBERS. \n", reverse, n);
+	 }
+  
 }
 int factorial(int n){
 int i,fact=1,number=n;    

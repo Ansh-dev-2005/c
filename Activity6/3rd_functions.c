@@ -1,21 +1,26 @@
 #include <stdio.h>
-#define MAX_SIZE 100
-int sum(int arr[], int start, int len);
-int main(){
-    int arr[MAX_SIZE];
-    int N, i, sumofarray;
-    printf("Enter size of the array: ");
-    scanf("%d", &N);
-    printf("Enter elements in the array: ");
-    for(i=0; i<N; i++){
-        scanf("%d", &arr[i]);
-        }
-    sumofarray = sum(arr, 0, N);
-    printf("Sum of array elements: %d", sumofarray);
-    return 0;}
-    int sum(int arr[], int start, int len){
-    if(start >= len)
-    return 0;
-    return (arr[start] + sum(arr, start + 1, len));
-    }
-
+void swap (int *x, int *y)
+{
+static int *temp;
+temp = x;
+x = y;
+y = temp;
+}
+void printab ()
+{
+static int i, a = -3, b = -6;
+i = 0;
+while (i <= 4)
+{
+if ((i++)%2 == 1) continue;
+a = a + i;
+b = b + i;
+}
+swap (&a, &b);
+printf("a = %d, b = %d\n", a, b);
+}
+main()
+{
+printab();
+printab();
+}

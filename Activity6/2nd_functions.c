@@ -1,6 +1,8 @@
 #include<stdio.h>
-int triangle_area(int b, int h){
-    printf("Area of right angled triangle is %.2d \n",b*h*.5);
+void triangle_area(int b, int h){
+    int area;
+    area=(b*h)/2;
+    printf("Area of right angled triangle is %d   \n ",area);
 }
 swap(int x, int y)
 {
@@ -11,8 +13,9 @@ swap(int x, int y)
     printf("Second number after swapping is %d",y);
     
 }
+
 float* remainder (int a, int b){
-    printf("Remainder is %0.2d \n",a/b);
+    printf("Remainder is %0.2d \n",a%b);
 
 }
 int main(){
@@ -24,5 +27,6 @@ int main(){
     remainder(a,b);
     triangle_area(a,b);
     swap(a,b);
+
 
 }
