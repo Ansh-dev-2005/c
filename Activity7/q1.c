@@ -16,3 +16,6 @@ int main()
 	printf("%d",Sum(A, N));
 	return 0;
 }
+// Code By anSH
+// Review me on Github: @Ansh-dev-2005
+// Thank You

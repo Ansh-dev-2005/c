@@ -44,3 +44,6 @@ int main()
 	  printf("%d and %d are NOT CO-PRIME NUMBERS.", reverse(n), n);
 	 }
 }
+// Code By anSH
+// Review me on Github: @Ansh-dev-2005
+// Thank You
