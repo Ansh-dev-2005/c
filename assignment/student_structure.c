@@ -1,28 +1,36 @@
-#include<stdio.h>
-int main(){
-    struct student_structure
-    {
-        int SAP_ID;
-        char name[20];
-        char Course[20];
-        int Marks;
-    };
-    {
-        struct student_structure s1;
-        printf("Enter the details of student 1 \n");
-        printf("Enter the SAP ID of student 1 \n");
-        scanf("%d",&s1.SAP_ID);
-        printf("Enter the name of student 1 \n");
-        scanf("%s",&s1.name);
-        printf("Enter the course of student 1 \n");
-        scanf("%s",&s1.Course);
-        printf("Enter the marks of student 1 \n");
-        scanf("%d",&s1.Marks);
-        printf("The details of student 1 are    \n");
-        printf("SAP ID of student 1 is  %d \n",s1.SAP_ID);
-        printf("Name of student 1 is %s \n",s1.name);
-        printf("Course of student 1 is %s \n",s1.Course);
-        printf("Marks of student 1 is %d \n",s1.Marks);
-    };
-    
+#include <stdio.h>
+struct student {
+    char Name[50];
+    int roll;
+    char course[100];
+    float marks;
+} s[10];
+
+int main() {
+    int i;
+    printf("Enter information of students:\n");
+
+    // storing information
+    for (i = 1; i <= 10; ++i) {
+        
+        printf("\nEnter the SAP_ID for %d,\n", i);
+        scanf("%d", &s[i].roll);
+        printf("Enter first name: ");
+        scanf("%s", &s[i].Name);
+        printf("Enter course: ");
+        scanf("%s", &s[i].course);
+        printf("Enter marks: ");
+        scanf("%f", &s[i].marks);
+    }
+    printf("Displaying Information:\n\n");
+
+    // displaying information
+    for (i = 1; i <= 10; ++i) {
+        printf("\nRoll number: %d\n", s[i].roll);
+        printf("Name: %d", s[i].Name);
+        printf("Course: %d", s[i].course);
+        printf("Marks: %.1f", s[i].marks);
+        printf("\n");
+    }
+    return 0;
 }
