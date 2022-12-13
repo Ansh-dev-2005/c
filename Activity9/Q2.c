@@ -1,4 +1,4 @@
-//Design a structure ‘student_record’ to store student details like name, SAP ID, enrollment number, date ofregistration and date of birth. The element date of registration is defined using another structure ‘date’ tostore date details like day, month, and year. Get data of ‘n’ students and then print the entered values.
+//Design a structure ‘student_record’ to store student details like name, SAP ID, enrollment number, date ofregistration and date of birth. The element date of registration is defined using another structure ‘date’ tostore date details like day, month, and year. Get data of ‘n’ students and then print the entered values [Hint:Use concept of Nested structures and Array of Structures.]
 #include<stdio.h>
 #include<stdlib.h>
 struct date
