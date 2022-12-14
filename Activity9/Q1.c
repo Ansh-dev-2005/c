@@ -1,6 +1,8 @@
 
 //structure 'product' to store the details of product purchased.
 //using pointer to structure to store the address of the structure.
+#include<stdio.h>
+#include<stdlib.h>
 struct product
 {
     char name[20];
